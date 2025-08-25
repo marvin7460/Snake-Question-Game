@@ -81,5 +81,3 @@ snake-game/
 * Guardar récords en **LocalStorage**.
 * Implementar skins para la serpiente.
 * Modo multijugador online.
-
-```
