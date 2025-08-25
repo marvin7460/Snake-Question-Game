@@ -82,15 +82,4 @@ snake-game/
 * Implementar skins para la serpiente.
 * Modo multijugador online.
 
----
-
-## 🎮 Demo
-
-*(Aquí podrías poner un enlace si lo subes a Vercel o Netlify)*
-
-```
-
----
-
-👉 ¿Quieres que también te prepare un **badge de shields.io** (ejemplo: `Made with Vite`, `TypeScript`, `React`) para que tu README se vea más pro?
 ```
