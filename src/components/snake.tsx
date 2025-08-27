@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import QuizModal from "./quist";
+import ArrowControls from "./ArrowControls";
 
 type Direction = "UP" | "DOWN" | "LEFT" | "RIGHT"| "NONE";
 type Position = [number, number];
@@ -231,6 +232,22 @@ export default function SnakeGame() {
             onAnswered={handleAnswered}
           />
         }
+        <div className="sm:hidden flex flex-col items-center mt-8">
+          {/* ...tablero y modal */}
+          <ArrowControls
+            onDirection={dir => {
+              // mismo control que para el teclado, evita reversa de dirección
+              if (
+                (dir === "UP" && direction !== "DOWN") ||
+                (dir === "DOWN" && direction !== "UP") ||
+                (dir === "LEFT" && direction !== "RIGHT") ||
+                (dir === "RIGHT" && direction !== "LEFT")
+              ) {
+                setDirection(dir);
+              }
+            }}
+          />
+        </div>
     </>
   );
 }
