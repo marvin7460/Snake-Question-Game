@@ -6,7 +6,7 @@ export default function ArrowControls({ onDirection }: ArrowControlsProps) {
   return (
     <div className="flex flex-col items-center gap-2 select-none">
       <button
-        className="bg-gray-300 rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow hover:bg-gray-400"
+        className="bg-gray-300 rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow hover:bg-gray-400"
         onClick={() => onDirection("UP")}
         aria-label="Arriba"
       >
@@ -14,14 +14,14 @@ export default function ArrowControls({ onDirection }: ArrowControlsProps) {
       </button>
       <div className="flex gap-14">
         <button
-          className="bg-gray-300 rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow hover:bg-gray-400"
+          className="bg-gray-300 rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow hover:bg-gray-400"
           onClick={() => onDirection("LEFT")}
           aria-label="Izquierda"
         >
           ⬅️
         </button>
         <button
-          className="bg-gray-300 rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow hover:bg-gray-400"
+          className="bg-gray-300 rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow hover:bg-gray-400"
           onClick={() => onDirection("RIGHT")}
           aria-label="Derecha"
         >
@@ -29,7 +29,7 @@ export default function ArrowControls({ onDirection }: ArrowControlsProps) {
         </button>
       </div>
       <button
-        className="bg-gray-300 rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow hover:bg-gray-400"
+        className="bg-gray-300 rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow hover:bg-gray-400"
         onClick={() => onDirection("DOWN")}
         aria-label="Abajo"
       >

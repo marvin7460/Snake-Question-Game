@@ -5,7 +5,7 @@ import ArrowControls from "./ArrowControls";
 type Direction = "UP" | "DOWN" | "LEFT" | "RIGHT"| "NONE";
 type Position = [number, number];
 
-const GRID_SIZE = 20;
+const GRID_SIZE = 17;
 
 const initialSnake: Position[] = [
   [8, 8]
@@ -178,7 +178,7 @@ export default function SnakeGame() {
 
         return [newHead, ...prev.slice(0, -1)];
       });
-    }, 120);
+    }, 200);
     return () => clearInterval(interval);
   }, [direction, food, showQuiz]);
 
@@ -199,7 +199,7 @@ export default function SnakeGame() {
   // Renderiza el tablero
   return (
     <>     
-      <div className={`flex flex-col items-center mt-8 ${showQuiz && "blur-xs" }`}>
+      <div className={`flex flex-col items-center  ${showQuiz && "blur-xs" }`}>
         <h1 className="text-2xl font-bold mb-2">Snake Quiz Game</h1>
         <div className="mb-2 text-lg">Puntaje: {score}</div>
         <div
