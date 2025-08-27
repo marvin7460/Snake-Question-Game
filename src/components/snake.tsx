@@ -11,10 +11,108 @@ const initialSnake: Position[] = [
 ];
 
 const questions = [
-  { question: "¿Capital de España?", options: ["Madrid", "Barcelona"], answer: "Madrid" },
-  { question: "¿2 * 2?", options: ["4", "8"], answer: "4" },
-  { question: "¿Color primario?", options: ["Rojo", "Verde"], answer: "Rojo" },
+  { 
+    question: "¿Cómo se define un lenguaje dentro del contexto de la Teoría de la Computación?", 
+    options: ["Conjunto de signos y reglas", "Un diccionario de palabras", "Una forma de hablar"], 
+    answer: "Conjunto de signos y reglas" 
+  },
+  { 
+    question: "¿Qué es un signo y qué función cumple en un lenguaje?", 
+    options: ["Un concepto abstracto que representa objetos", "Una palabra sin sentido", "Un error de escritura"], 
+    answer: "Un concepto abstracto que representa objetos" 
+  },
+  { 
+    question: "¿Qué se entiende por interpretación en el uso de los signos?", 
+    options: ["Proceso de relacionar el signo con un objeto o idea", "Traducción literal de un idioma", "Cambio de significado por contexto"], 
+    answer: "Proceso de relacionar el signo con un objeto o idea" 
+  },
+  { 
+    question: "¿Cuál es la diferencia entre signo y símbolo?", 
+    options: ["El símbolo es un signo creado convencionalmente", "No hay diferencia", "El signo es siempre abstracto y el símbolo no"], 
+    answer: "El símbolo es un signo creado convencionalmente" 
+  },
+  { 
+    question: "¿Qué significa el término 'denotado' en relación con los signos?", 
+    options: ["El objeto al que se refiere el signo", "Las características del signo", "Un significado ambiguo"], 
+    answer: "El objeto al que se refiere el signo" 
+  },
+  { 
+    question: "¿Qué se entiende por 'designado' de un signo y cómo se determina?", 
+    options: ["Características o propiedades del signo, definidas por su definición", "Objeto al que se refiere el signo", "Un sinónimo del signo"], 
+    answer: "Características o propiedades del signo, definidas por su definición" 
+  },
+  { 
+    question: "¿Qué se denomina ambigüedad en los signos?", 
+    options: ["Que un signo tenga más de un designado", "Que un signo no tenga significado", "Que un signo cambie de idioma"], 
+    answer: "Que un signo tenga más de un designado" 
+  },
+  { 
+    question: "¿Qué papel cumplen las reglas sintácticas en un lenguaje?", 
+    options: ["Ordenan y relacionan los signos", "Definen su significado", "Relacionan signos con usuarios"], 
+    answer: "Ordenan y relacionan los signos" 
+  },
+  { 
+    question: "¿Cómo se diferencian las reglas semánticas de las sintácticas?", 
+    options: ["Semánticas relacionan signos con significados, sintácticas ordenan signos", "Semánticas ordenan signos, sintácticas dan significado", "No hay diferencia"], 
+    answer: "Semánticas relacionan signos con significados, sintácticas ordenan signos" 
+  },
+  { 
+    question: "¿Qué función tienen las reglas pragmáticas en la comunicación?", 
+    options: ["Vinculan los signos con sus usuarios", "Ordenan los signos", "Definen la fonética"], 
+    answer: "Vinculan los signos con sus usuarios" 
+  },
+  { 
+    question: "¿Qué disciplinas componen la gramática de los lenguajes?", 
+    options: ["Morfología, sintaxis y fonética", "Semántica y pragmática", "Ortografía y gramática"], 
+    answer: "Morfología, sintaxis y fonética" 
+  },
+  { 
+    question: "¿De qué se ocupa la morfología en un lenguaje?", 
+    options: ["De la forma de las palabras", "De la pronunciación de signos", "De la relación entre usuarios"], 
+    answer: "De la forma de las palabras" 
+  },
+  { 
+    question: "¿Qué estudia la fonética dentro de la gramática?", 
+    options: ["La expresión oral de los signos", "La escritura de los signos", "La semántica de los signos"], 
+    answer: "La expresión oral de los signos" 
+  },
+  { 
+    question: "¿Qué diferencia fundamental existe entre los lenguajes naturales y los lenguajes formales?", 
+    options: ["Naturales permiten variaciones, formales son rígidos", "Naturales no tienen gramática, formales sí", "Formales no transmiten significado"], 
+    answer: "Naturales permiten variaciones, formales son rígidos" 
+  },
+  { 
+    question: "¿Por qué los lenguajes formales son apropiados para la interpretación inequívoca de mensajes?", 
+    options: ["Porque no permiten excepciones", "Porque son más fáciles de aprender", "Porque son parecidos a los naturales"], 
+    answer: "Porque no permiten excepciones" 
+  },
+  { 
+    question: "¿Qué importancia tienen las reglas en los lenguajes de programación respecto a los naturales?", 
+    options: ["Son estrictas e inquebrantables", "Son opcionales", "Se basan en costumbres culturales"], 
+    answer: "Son estrictas e inquebrantables" 
+  },
+  { 
+    question: "¿Qué aportó la 'Teoría de las Gramáticas Transformacionales' de Noam Chomsky?", 
+    options: ["Bases de la Lingüística Matemática y formalización de lenguajes", "Traducción automática", "Solo nuevas palabras"], 
+    answer: "Bases de la Lingüística Matemática y formalización de lenguajes" 
+  },
+  { 
+    question: "¿Cómo influyó la obra de Chomsky en el desarrollo de los lenguajes de programación?", 
+    options: ["Permitió formalizar y crear compiladores", "Mejoró la pronunciación", "Simplificó la ortografía"], 
+    answer: "Permitió formalizar y crear compiladores" 
+  },
+  { 
+    question: "¿Por qué se considera necesario un tratamiento tanto sintáctico como semántico en traducción automática?", 
+    options: ["Porque hay que entender significado y orden de palabras", "Porque basta con traducir palabra por palabra", "Porque los idiomas no tienen reglas"], 
+    answer: "Porque hay que entender significado y orden de palabras" 
+  },
+  { 
+    question: "¿Qué aplicaciones actuales tienen las técnicas de lenguajes formales en el procesamiento de lenguajes naturales?", 
+    options: ["Traducción automática, interpretación de significados, diálogo con sistemas expertos", "Gramática escolar", "Publicidad y mercadotecnia"], 
+    answer: "Traducción automática, interpretación de significados, diálogo con sistemas expertos" 
+  }
 ];
+
 
 function getRandomPosition(): Position {
   return [
@@ -75,7 +173,6 @@ export default function SnakeGame() {
         // Comer comida
         if (newHead[0] === food[0] && newHead[1] === food[1]) {
           setShowQuiz(true);
-          setScore(s => s + 1);
         }
 
         return [newHead, ...prev.slice(0, -1)];
@@ -89,6 +186,7 @@ export default function SnakeGame() {
     //si es correcta agrander la serpiente
     if(isCorrect){
       setSnake(prev => [...prev, prev[prev.length - 1]]);
+      setScore(s => s + 1);
     }else{
       setScore(s => s - 1);
     }
